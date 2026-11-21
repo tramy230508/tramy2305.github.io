@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ho ca</title>
+    <style>
+        #hoca {
+            position: fixed;
+            bottom: 0;
+            border: 2px double;
+            height: 400px;
+            width: 100%;
+            background-color: #0b7ec4;
+            overflow: hidden;
+        }
+
+        @keyframes caboi {
+            0% { translate: 0 0; }
+            25% { translate: 400px 120px; }
+            48% { translate: 800px 120px; }
+            52% { translate: 800px 120px; rotate: -10deg; }
+            75% { translate: 400px 220px; }
+            100% { translate: 0 0; }
+        }
+
+        .ca {
+            position: absolute;
+            width: 90px;
+            animation: caboi 30s infinite;
+        }
+
+        #rua { top: 20px; left: 20px; width: 95px; animation-duration: 28s; }
+        #camap { top: 140px; left: 180px; width: 150px; animation-duration: 22s; }
+        #dancavang { top: 30px; left: 450px; width: 115px; animation-duration: 26s; }
+        #dancamo { top: 230px; left: 320px; width: 110px; opacity: 0.4; animation-duration: 34s; }
+        #tholan1 { top: 80px; left: 300px; width: 85px; animation-duration: 25s; }
+        #tholan2 { top: 250px; left: 80px; width: 85px; animation-duration: 30s; }
+        #tholan3 { top: 200px; left: 520px; width: 85px; animation-duration: 24s; }
+    </style>
+</head>
+<body>
+    <h2>Bùi Nguyễn Trà My</h2>
+    <div id="hoca">
+        <img id="rua" class="ca" src="aquarium/turtle.png" alt="Rùa biển">
+        <img id="camap" class="ca" src="aquarium/shark.png" alt="Cá mập">
+        <img id="dancavang" class="ca" src="aquarium/goldFishSchool.png" alt="Đàn cá vàng">
+        <img id="dancamo" class="ca" src="aquarium/faintSchool.png" alt="Đàn cá mờ">
+        <img id="tholan1" class="ca" src="aquarium/diver1.png" alt="Thợ lặn 1">
+        <img id="tholan2" class="ca" src="aquarium/diver2.png" alt="Thợ lặn 2">
+        <img id="tholan3" class="ca" src="aquarium/diver3.png" alt="Thợ lặn 3">
+    </div>
+</body>
+</html>
